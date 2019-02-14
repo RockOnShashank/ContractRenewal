@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="6"
+    >
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="44sp"
+            android:layout_gravity="center"
+
+            android:gravity="center|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="1"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/lightest_grey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Proposal"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+android:textSize="18sp"
+            android:textColor="@color/title_text_color"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/renewal_proposal_icon"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="44sp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_gravity="center"
+
+            android:gravity="center|center_vertical"
+            android:text="2"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/lightest_grey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Details"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+
+            android:textColor="@color/title_text_color"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/confirm_details_icon"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="44sp"
+            android:layout_gravity="center"
+
+            android:gravity="center|center_vertical"            android:layout_marginLeft="10dp"
+            android:text="3"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/lightest_grey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Proposal"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+
+            android:textColor="@color/title_text_color"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recieve_proposal_icon"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+
+    android:weightSum="3">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="44sp"
+        android:layout_gravity="center"
+
+        android:gravity="center|center_vertical"        android:layout_marginLeft="10dp"
+        android:text="4"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:textColor="@color/lightest_grey"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Pick-Up"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+
+        android:textColor="@color/title_text_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/schedule_pick_icon"
+        android:layout_gravity="center|right"
+        android:layout_weight="1"
+
+
+        />
+
+</LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+    android:weightSum="3">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="44sp"
+        android:layout_gravity="center"
+
+        android:gravity="center|center_vertical"        android:layout_marginLeft="10dp"
+        android:text="5"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:textColor="@color/lightest_grey"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renewal Complete"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+
+        android:textColor="@color/title_text_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/renewal_complete_icon"
+        android:layout_gravity="center|right"
+        android:layout_weight="1"
+
+
+        />
+
+</LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="3">
+        <Button
+            android:id="@+id/bt_start"
+            android:onClick="LoginAuthentication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/helveticaneue_bold"
+            android:background="#253746"
+            android:text="@string/start_contract_renewal"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

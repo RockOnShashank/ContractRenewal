@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterOTPActivity">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+
+        android:onClick="BackButton"
+        android:src="@drawable/open_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="141dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/splash_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="320dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333f48"
+            android:text="@string/register_title_text"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#253746"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/please_enter_the_otp_sent_to_your_registered_mobile_number_to_complete_your_registration"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp_1"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="19.5sp"
+                android:maxLength="1"
+                />
+
+            <EditText
+                android:id="@+id/otp_2"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:textSize="19.5sp"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/otp_3"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:textSize="19.5sp"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/otp_4"
+                android:layout_width="47dp"
+                android:maxLength="1"
+                android:layout_height="wrap_content"
+                android:textSize="19.5sp"
+                android:gravity="center"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#da291c"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:visibility="invisible"
+            android:textSize="12sp"
+            android:text="@string/you_have_entered_an_invalid_otp"/>
+
+        <TextView
+            android:id="@+id/tv_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#52a9f6"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="33dp"
+            android:text="@string/resend_otp_forgot_pass"/>
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#253746"
+            android:text="@string/confirm_text"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+
+        android:src="@drawable/footer_login"
+        android:translationZ="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

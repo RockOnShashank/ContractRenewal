@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+
+      >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="53dp"
+            android:padding="1dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_pass_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#cbcfd6">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/old_password"
+                    android:textColorHint="#333f48"
+                    android:maxLength="50"
+                    android:longClickable="false"
+
+                    android:maxLines="1"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="-30dp"
+
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="8dp"
+                android:onClick="ViewPassword"
+                android:src="@drawable/ic_cancel_view_password" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="1dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_pass_new1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#cbcfd6">
+
+                <EditText
+                    android:id="@+id/et_password1"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/change_new_password"
+                    android:maxLength="50"
+                    android:longClickable="false"
+
+                    android:maxLines="1"
+                    android:textColorHint="#333f48"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:onClick="ViewPassword"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_cancel_view_password" />
+
+        </LinearLayout>
+    <TextView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+android:padding="1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:text="(use 8 or more characters with a combination of special characters, numbers, upper and lower case letters)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_confirm_pass_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#cbcfd6">
+
+                <EditText
+                    android:id="@+id/et_confirm"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:longClickable="false"
+
+                    android:hint="@string/change_confirm_password"
+                    android:textColorHint="#333f48"
+                    android:textSize="13sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginStart="-30dp"
+                android:onClick="ViewPassword"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_cancel_view_password" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_error_message"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff1100"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/the_password_you_have_entered_do_not_match"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="#253746"
+            android:text="CHANGE PASSWORD"
+            android:layout_marginBottom="50dp"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

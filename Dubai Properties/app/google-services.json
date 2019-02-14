@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "165775947442",
+    "firebase_url": "https://dubai-am-residents.firebaseio.com",
+    "project_id": "dubai-am-residents",
+    "storage_bucket": "dubai-am-residents.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165775947442:android:9cdf20ae767835fe",
+        "android_client_info": {
+          "package_name": "com.deloitte.digital.dubaiproperties"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165775947442-tp9u75th7e5j47sndr4f8us09bgf7b7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deloitte.digital.dubaiproperties",
+            "certificate_hash": "9f99029022fca729fc1f498652243db5d9e903be"
+          }
+        },
+        {
+          "client_id": "165775947442-ljbpibv5u7n97k6iahf4mf4c3skuea4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe2foHUElpWviNTWw2GJWvKt-DRpybebA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165775947442-se37u40hq97nl20srpip2rqfl0p0ahrd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "165775947442-nq52inmjtis5l27f9jlirh1fsk8bvjn7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dubaiam.am"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165775947442:android:a41ccbb28ae09cac",
+        "android_client_info": {
+          "package_name": "com.residents.dubaiassetmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165775947442-08spf0f5cos0crpqlkkgujard2eeboes.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.residents.dubaiassetmanagement",
+            "certificate_hash": "9f99029022fca729fc1f498652243db5d9e903be"
+          }
+        },
+        {
+          "client_id": "165775947442-ljbpibv5u7n97k6iahf4mf4c3skuea4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe2foHUElpWviNTWw2GJWvKt-DRpybebA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165775947442-se37u40hq97nl20srpip2rqfl0p0ahrd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "165775947442-nq52inmjtis5l27f9jlirh1fsk8bvjn7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dubaiam.am"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

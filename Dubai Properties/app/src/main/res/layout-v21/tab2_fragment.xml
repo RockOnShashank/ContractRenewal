@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:background="#f7f7f7"
+            android:layout_marginRight="13dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="13dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:text="MOBILE NUMBER *"
+                        android:textSize="10sp"
+                        android:textColor="#cbcfd6"
+                        />
+
+                    <EditText
+                        android:id="@+id/profile_editText_mobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#f7f7f7"
+                        android:textColor="#333f48"
+                        android:text="Name"
+                        android:hint="0xx xxxxxxx"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:digits="0123456789 "
+                        android:maxLength="11"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_stroke_1"/>
+               <!-- <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_stroke_1"
+                    android:gravity="center_vertical"
+                    android:onClick="EditButtonClicked"
+                    android:tag="1" />
+-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saveAndCancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/edittextLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+                <TextView
+                    android:id="@+id/tv_error_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="error"
+                    android:layout_marginLeft="12dp"
+                    android:visibility="gone"
+                    android:textSize="10sp"
+                    android:textColor="@color/red"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/black_button_border"
+                        android:layout_marginRight="5dp"
+                        android:text="CANCEL"
+                        />
+
+                    <Button
+                        android:id="@+id/saveButton"
+                        android:layout_width="156dp"
+                        android:onClick="UpdateNumber"
+                        android:layout_height="50dp"
+                        android:background="#253746"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:text="SAVE" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="13dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:background="#f7f7f7"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:text="EMAIL ID *"
+                        android:textSize="10sp"
+                        android:textColor="#cbcfd6"
+                        />
+
+                    <EditText
+                        android:id="@+id/profile_editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:textColor="#333f48"
+                        android:inputType="textPersonName"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textSize="13sp"
+                        android:text="Name"
+                        android:maxLength="35"
+                         />
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/editButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_stroke_1"/>
+<!--
+                <Button
+                    android:id="@+id/editButton1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_stroke_1"
+                    android:gravity="center_vertical"
+                    android:onClick="EditButtonClicked"
+                    android:tag="1" />-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/saveAndCancel1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/edittextLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_error_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="error"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#f7f7f7"
+                    android:visibility="gone"
+                    android:textSize="10sp"
+                    android:textColor="@color/red"
+                    />
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/cancelButton1"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="CANCEL"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12sp"
+                        android:background="@drawable/black_button_border"
+                        />
+
+                    <Button
+                        android:id="@+id/saveButton1"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:text="SAVE"
+                        android:background="#253746"
+                        android:textColor="#fff"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            android:layout_margin="10dp"
+            tools:layout_editor_absoluteX="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:weightSum="1"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/profile_alternateNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:text="ALTERNATE MOBILE NUMBER"
+                        android:textColor="#cbcfd6"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/profile_editText_alternate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:textColor="#333f48"
+                        android:maxLength="11"
+                        android:fontFamily="@font/helveticaneue_medium"
+android:hint="0xx xxxxxxx"
+                        android:digits="0123456789 "
+                        android:text=""
+                        android:textSize="13sp" />
+
+
+                    <View
+                        android:id="@+id/edittextLine_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_error_alternate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="error"
+                        android:layout_marginLeft="0dp"
+                        android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textColor="@color/red"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_textview_landline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="LANDLINE NUMBER"
+                        android:textColor="#cbcfd6"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/profile_editText_landline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:fontFamily="@font/helveticaneue_medium"
+android:hint="0x xxxxxxx"
+                        android:textColor="#333f48"
+                        android:digits="01234567890 "
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/edittextLine_contact2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@android:color/darker_gray" />
+                    <TextView
+                        android:id="@+id/tv_error_landline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="error"
+                        android:layout_marginLeft="0dp"
+                        android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textColor="@color/red"
+                        />
+                    <TextView
+                        android:id="@+id/profile_textview_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="CONTACT NUMBER(HOME COUNTRY)"
+                        android:textSize="10sp"
+                        android:textColor="#cbcfd6"
+                        android:visibility="gone"
+                        />
+
+                    <EditText
+                        android:id="@+id/profile_editText_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:textColor="#333f48"
+                        android:visibility="gone"
+android:maxLength="20"
+                        android:fontFamily="@font/helveticaneue_medium"
+
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/edittextLine_contact3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:visibility="gone"
+
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_error_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="error"
+                        android:layout_marginLeft="0dp"
+                        android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textColor="@color/red"
+                        />
+                    <TextView
+                        android:id="@+id/profile_textView_emergency"
+                        android:layout_width="wrap_content"
+                        android:textColor="#cbcfd6"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="EMERGENCY CONTACT NUMBER"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/profile_editText_emergency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:textColor="#333f48"
+                        android:digits="01234567890 "
+                        android:fontFamily="@font/helveticaneue_medium"
+android:hint="0xx xxxxxxx"
+                        android:maxLength="11"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/edittextLine_contact4"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <TextView
+                        android:id="@+id/tv_error_emergency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="error"
+                        android:layout_marginLeft="0dp"
+                        android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textColor="@color/red"
+                        />
+                    <TextView
+                        android:id="@+id/profile_textView_PO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="PO BOX *"
+                        android:textColor="#cbcfd6"
+
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/profile_editText_PO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:textColor="#333f48"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/edittextLine_contact5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_error_pobox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PO BOX is mandatory"
+                        android:layout_marginLeft="0dp"
+                        android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textColor="@color/red"
+                        />
+                    <TextView
+                        android:id="@+id/profile_textView_companyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="COMPANY NAME"
+                        android:textSize="10sp"
+                        android:textColor="#cbcfd6"
+                        />
+
+                    <EditText
+                        android:id="@+id/profile_editText_companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:textColor="#333f48"
+android:maxLength="40"
+                        android:fontFamily="@font/helveticaneue_medium"
+
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/edittextLine_contact6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+
+                        android:background="@android:color/darker_gray" />
+                    <TextView
+                        android:id="@+id/profile_textView_companyAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="COMPANY ADDRESS"
+                        android:textSize="10sp"
+                        android:textColor="#cbcfd6"
+                        />
+
+                    <EditText
+                        android:id="@+id/profile_editText_companyAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="33dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#f7f7f7"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:fontFamily="@font/helveticaneue_medium"
+
+                        android:maxLength="50"
+                        android:textSize="13sp"
+                        android:textColor="#333f48"
+                        />
+
+                    <View
+                        android:id="@+id/edittextLine_contact7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="30dp"
+
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/editButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_stroke_1"
+                    android:padding="10dp"
+                    android:tag="1"/>
+                <!--<Button
+                    android:id="@+id/editButton2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_stroke_1"
+                    android:tag="1" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saveAndCancel2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/edittextLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@android:color/darker_gray" />
+
+<!--
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancelButton2"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="CANCEL" />
+
+                    <Button
+                        android:id="@+id/saveButton2"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="SAVE" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/saveAndCancel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/edittextLine3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/cancelButton2"
+                            android:layout_width="156dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="CANCEL"
+                            android:layout_marginRight="5dp"
+                            android:textSize="12sp"
+                            android:background="@drawable/black_button_border"
+                            />
+
+                        <Button
+                            android:id="@+id/saveButton2"
+                            android:layout_width="156dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:text="SAVE"
+                            android:background="#253746"
+                            android:textColor="#fff"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

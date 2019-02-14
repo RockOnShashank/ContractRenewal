@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+
+        android:id="@+id/ll_show_family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="#f7f7f7"
+        android:gravity="left|center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:textSize="15sp"
+android:textStyle="bold"
+            android:textColor="#333f48"
+            android:text="Adam Smith" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:enabled="false"
+                android:textColor="#333f48"
+                android:textSize="15sp"
+
+                android:text="0909090909"
+
+                />
+            <EditText
+                android:id="@+id/tv_occupantId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:enabled="false"
+                android:textColor="#333f48"
+                android:visibility="gone"
+
+                />
+            <ImageView
+                android:id="@+id/iv_edit_button"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon_edit"
+                android:padding="12dp"
+                android:layout_marginRight="15dp"/>
+
+            <ImageView
+                android:id="@+id/iv_delete_button"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_delete"
+                android:padding="12dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

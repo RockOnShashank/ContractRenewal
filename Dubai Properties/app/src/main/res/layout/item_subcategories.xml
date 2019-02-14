@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:id="@+id/row_linearlayout">
+
+    <TextView
+        android:id="@+id/tv_subCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:paddingLeft="10dp"
+        android:background="@drawable/sub_border"
+
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:text="AC not working"
+        android:textColor="#585d63"
+        android:textSize="13sp" />
+
+</android.support.constraint.ConstraintLayout>

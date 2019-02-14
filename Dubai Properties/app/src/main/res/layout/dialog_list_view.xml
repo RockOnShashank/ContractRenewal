@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmenu"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/see_all_dialog_bg"
+    tools:context=".MainActivity"
+    android:id="@+id/coordinator_layout">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:background="@drawable/cross_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<TextView
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:fontFamily="@font/helveticaneue_bold"
+    android:textColor="#101820"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SEE ALL"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_see_all"
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+</FrameLayout>

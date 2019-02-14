@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_personal_firstnameH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIRST NAME"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_lastnameH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAST NAME"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATE OF BIRTH"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NATIONALITY"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_nationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VISA NO"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_visano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VISA EXPIRY DATE"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_visaexp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMIRATES ID NUMBER"
+            android:textColor="#cbcfd6"
+            android:textSize="10sp"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/profile_personal_emiratesid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#333f48"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="Renewal Proposal"
+        android:fontFamily="@font/helveticaneue_bold"
+        android:textColor="@color/active_dots"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="right"
+    android:gravity="right">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#333f48"
+        android:lineSpacingExtra="3.1sp"
+        android:layout_gravity="center"
+        android:text="Lease Period  "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="1 Year"
+        android:fontFamily="@font/helveticaneue_bold"
+        android:textColor="@color/active_dots"/>
+
+
+</LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#fff"
+    android:padding="15dp"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_color"
+        android:text="Current Lease Amount"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center|right"
+    android:gravity="right"
+    android:layout_weight="1"
+
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/grey_color"
+        android:text="AED "
+        />
+
+    <TextView
+        android:id="@+id/tv_cla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:gravity="top"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_color"
+        android:text="122,800"
+        />
+</LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#333f48"
+                    android:text="Renewal Lease Amount"
+                    />
+                <TextView
+                    android:id="@+id/tv_rl_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#929ba2"
+                    android:lineSpacingExtra="4.5sp"
+                    android:text="10% increase on Current Lease Amount based on RERA INDEX"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center|right"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/grey_color"
+                    android:text="AED "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_rla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:textColor="@color/grey_color"
+                    android:text="122,800"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#d0d1d2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/grey_color"
+            android:text="Premium or Discount on 4 installments"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:textColor="@color/grey_color"
+            android:text="Choose 1 installment to get 2% discount on the Lease Amount"
+            />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center|right"
+            android:gravity="right"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_gravity="bottom"
+                android:textColor="@color/grey_color"
+                android:text="AED "
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:gravity="top"
+
+                android:layout_gravity="center"
+                android:textColor="@color/grey_color"
+                android:text="0"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+
+        android:background="#d0d1d2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/tv_name_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/grey_color"
+                android:text="Ejari Fees"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center|right"
+                android:gravity="right"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/grey_color"
+                    android:text="AED "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_amount_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:textColor="@color/grey_color"
+                    android:text="122,800"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#d0d1d2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/tv_name_second"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/grey_color"
+                android:text="Ejari Fees"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center|right"
+                android:gravity="right"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/grey_color"
+                    android:text="AED "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_amount_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:textColor="@color/grey_color"
+                    android:text="122,800"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#d0d1d2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_name_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/grey_color"
+                    android:text="Admin Fee"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/grey_color"
+                    android:text="Inclusive of 5% VAT"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|right"
+                android:gravity="right"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/grey_color"
+                    android:text="AED "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_amount_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:gravity="top"
+
+                    android:layout_gravity="center"
+                    android:textColor="@color/grey_color"
+                    android:text="1,800"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#d0d1d2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/grey_color"
+                android:text="Total Payable Amount"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center|right"
+                android:gravity="right"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/grey_color"
+                    android:text="AED "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:textColor="@color/grey_color"
+                    android:text="138,380"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#929ba2"
+            android:lineSpacingExtra="3.6sp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:text="(You can change your payment Installment plan in the next step) "
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#585d63"
+        android:fontFamily="@font/helveticaneue_bold"
+        android:text="Want to Renew your Lease?"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_weight="3">
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_bold"
+        android:background="@drawable/black_button_border"
+        android:text="NO"
+        android:textColor="@color/dark_grey_text_color"  />
+
+    <Button
+        android:layout_weight="1"
+android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_bold"
+        android:background="@drawable/black_button_border"
+        android:text="LATER"
+        android:textColor="@color/dark_grey_text_color" />
+    <Button
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/btn_yes"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_bold"
+        android:background="@drawable/black_button_border"
+        android:text="YES"
+        android:textColor="@color/dark_grey_text_color"  />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#52a9f6"
+        android:layout_marginTop="15dp"
+        android:text="EXPLORE OTHER PROPERTIES"
+        />
+
+</LinearLayout>
+</ScrollView>

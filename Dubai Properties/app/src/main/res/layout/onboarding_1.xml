@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="DIGITIZED CONVENIENCE"
+            android:textColor="#101820"
+
+            android:fontFamily="@font/helveticaneue_medium"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="16sp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="7.2sp"
+            android:text="Request for maintenance, Make enquiries, and Manage Your profile effortlessly through your phone"
+            android:textColor="#585d63"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="227dp"
+            android:layout_height="234dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/onboarding_1_image" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

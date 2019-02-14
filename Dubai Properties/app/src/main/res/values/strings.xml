@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">DubaiAM Life</string>
+    <string name="registered_email_mobile_number">EMAIL ID/MOBILE NUMBER</string>
+    <string name="login">LOGIN</string>
+    <string name="password">PASSWORD</string>
+    <string name="remember_me">REMEMBER ME</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="login_button">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="login_using_uae_pass">LOGIN USING UAE PASS</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="google">GOOGLE</string>
+    <string name="don_t_have_an_account">Already have an account?</string>
+    <string name="sign_up"><u>SIGN UP</u></string>
+    <string name="create">CREATE</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="sampleInput">(username@mail.com OR 05X XXXXXXX registered with Dubai Asset Management)</string>
+    <string name="register_agree">By clicking Register, you agree to our</string>
+    <string name="terms_service">TERMS AND CONDITIONS</string>
+    <string name="register">Register</string>
+    <string name="register_title">REGISTER</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home"></string>
+    <string name="home_title">HOME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payment_notification_card_view">Payment Notification</string>
+    <string name="your_next_payment_is">Your next payment is</string>
+    <string name="dubai_currency_rep">AED</string>
+    <string name="sample_number_money">5100</string>
+    <string name="sample_due_date">On 30 June, 2018</string>
+    <string name="welcome_home">Welcome</string>
+    <string name="sample_user_name_home">JIMMY ANDERSON</string>
+    <string name="contract_renewal_heading_home">Contract Renewal</string>
+    <string name="sample_renewal_text">Thank you for initiating Lease Renewal. Please continue to complete the process.</string>
+    <string name="sample_2_renewal">Please renew it at the earliest.</string>
+    <string name="renew_button_text">RENEWAL</string>
+    <string name="service_requests_text">Service Requests</string>
+    <string name="see_all_service_requests">VIEW ALL</string>
+    <string name="sample_sr_id">SR ID #1546</string>
+    <string name="category_title_service_request">Category:</string>
+    <string name="sample_services_category_type">AC</string>
+    <string name="tech_status_sample">Technician has confirmed his visit.</string>
+    <string name="sample_schedule_service_time">Scheduled for 03/08/2018, 08:00am</string>
+    <string name="error_message_here_sample_login">Error message here!</string>
+    <string name="Errror_Message_Id_or_pass_empty">Please enter UserID and Password!</string>
+    <string name="your_error_message_here_reg_sample">Your error message here..</string>
+    <string name="pass_match_register">The passwords do not match, please enter again !</string>
+
+
+    <!--service request-->
+    <string name="all_your_service">All your service requests</string>
+    <string name="maintenance_request">Maintenance Requests</string>
+    <string name="child_text">Services related to your Home Upkeep</string>
+
+    <string name="community_care">Community Care</string>
+
+    <string name="issues_related">Community related Maintenance, Suggestions and Complaints</string>
+    <string name="renewal_services">Leasing Services</string>
+
+    <string name="issues_related_lease">Enquiries related to your Lease</string>
+
+    <string name="view_history">VIEW HISTORY</string>
+<!--
+
+    my
+
+    <string name="facebook_app_id">559196801204942</string>
+-->
+
+
+<!--
+   <string name="facebook_app_id">2165646143692140</string>
+-->
+<!-- -new fb id- 09-01-->
+    <string name="facebook_app_id">317730045507665</string>
+
+    <!--my
+        <string name="fb_login_protocol_scheme">fb559196801204942</string>
+    -->
+
+    <string name="fb_login_protocol_scheme">fb559196801204942</string>
+
+    <string name="register_btn_register_page">REGISTER</string>
+    <string name="login_nav_register_page"> LOGIN</string>
+
+    <string name="resend_verification_link">RESEND VERIFICATION LINK</string>
+    <string name="a_verification_link_has_been_sent_to">An Email verification link has been sent to</string>
+    <string name="user_mail_com_sample">user@mail.com</string>
+    <string name="forgot_password_text">FORGOT PASSWORD?</string>
+    <string name="please_enter_your_registered_email_mobile_number_to_reset_your_password">Please Enter your registered Email ID/Mobile Number to reset your password</string>
+    <string name="mail_mobile_number">EMAIL ID/MOBILE NUMBER</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="old_password">CURRENT PASSWORD</string>
+    <string name="change_new_password">NEW PASSWORD</string>
+    <string name="change_confirm_password">CONFIRM NEW PASSWORD</string>
+
+    <string name="confirm_new_password">CONFIRM NEW PASSWORD</string>
+    <string name="enter_password">ENTER PASSWORD</string>
+    <string name="the_password_you_have_entered_do_not_match">The passwords you have entered do not match</string>
+    <string name="please_enter_the_otp_sent_to_your_registered_mobile_number">Please Enter the OTP sent to your Registered Mobile Number</string>
+    <string name="you_have_entered_an_invalid_otp">You have entered an invalid OTP</string>
+    <string name="resend_otp_forgot_pass">RESEND OTP</string>
+    <string name="please_enter_the_otp_sent_to_your_registered_mobile_number_to_complete_your_registration">Please Enter the OTP sent to your Registered Mobile Number</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="current_password">CURRENT PASSWORD</string>
+    <string name="submit">SUBMIT</string>
+    <string name="rel">Relationship*</string>
+
+
+    <string name="register_title_text">REGISTER</string>
+    <string name="confirm_text">CONFIRM</string>
+    <!--RegisterActivity-->
+
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+
+
+    <string name="register_login_new">REGISTER</string>
+    <string name="validate_userid_error">Please enter a valid UserID</string>
+
+    <string name="permission_denied_contacts">abcd</string>
+<!--dependants Relationship-->
+
+    None/Roommate/Spouse/Son/Daughter/Guarantor/Friends/Other/Father/Mother.
+
+
+    <string-array name="relationship_array">
+        <item>Relationship*</item>
+        <item>Spouse</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Father</item>
+        <item>Mother</item>
+
+
+    </string-array>
+
+////
+
+    <string name="action_clear_creds">Clear Credentials</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email ID</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="dummy_credentials">Dummy credentials: foo@example.com:hello</string>
+    <string name="save_credentials">Save credentials</string>
+    <string name="app_package">com.residents.dubaiassetmanagement</string>
+
+    <!--touchid-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_fingerprint">One-touch Sign In</string>
+    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your identity</string>
+    <string name="note">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
+    <string name="title_activity_home1">Fingerprint</string>
+    <string name="activity_home_desc">You have successfully logged in with fingerprint authentication</string>
+    <string name="activity_home_note">Close and re-open the app to see the fingerprint auth screen again</string>
+
+<!--
+    <string name="server_client_id">165775947442-ljbpibv5u7n97k6iahf4mf4c3skuea4t.apps.googleusercontent.com</string>
+-->
+
+    <string name="server_client_id">165775947442-se37u40hq97nl20srpip2rqfl0p0ahrd.apps.googleusercontent.com</string>
+
+    <!--keystore-->
+
+    <string name="username_jwt">admin</string>
+    <string name="password_jwt">D0ba!AM$$</string>
+
+   <!--Contract Renewal-->
+
+    <string name="start_contract_renewal">START CONTRACT RENEWAL</string>
+    <string name="go_to_rental">Go to Rental Increase Calculator on RERA website</string>
+    <string name="fill_in_the_following">Fill in the following details to calculate rental increase</string>
+    <string name="ali_khali_gate">Al Khail Gate Community</string>
+    <string name="enter_tenancy_contract_expiry_date">Enter Tenancy Contract Expiry Date</string>
+    <string name="select_main_area">Select Main Area - </string>
+    <string name="select_property_type">Select Property Type -</string>
+    <string name="select_area">Select Area -</string>
+    <string name="select_bed_rooms">Select Bed Rooms -</string>
+    <string name="type_current_annual_rate">Type Current Annual Rent</string>
+    <string name="proceed_to_rera_calculators">PROCEED TO RERA CALCULATORS</string>
+    <string name="payment_schedule">Payment Schedule</string>
+    <string name="please_refer_to_the_below_details_to_fill_your_post_dated_cheques_pdcs">Please refer to the below details to fill your Post Dated Cheques (PDCs)</string>
+    <string name="view_pdc">VIEW PDC</string>
+    <string name="rent_ejari_fees_admin_fee">Rent + Ejari Fees + Admin fee</string>
+    <string name="upload_your_document">Upload Your Documents</string>
+    <string name="please_make_sure">Please make sure the following Documents are updated</string>
+    <string name="you_can_proceed">You can proceed only after updating expired documents</string>
+
+
+</resources>

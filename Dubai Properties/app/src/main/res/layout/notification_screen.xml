@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <TextView
+        android:layout_marginTop="60dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICATIONS"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:fontFamily="@font/helveticaneue_bold"/>
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:background="@color/light_pink_color"
+        >
+
+
+<ImageView
+    android:id="@+id/iv_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="60dp"
+
+    android:adjustViewBounds="true"
+    android:src="@drawable/icon_bell"
+    android:scaleType="centerCrop"
+    />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:text="Lease Payment Reminder"
+            android:layout_marginTop="20dp"
+android:layout_marginLeft="15dp"
+android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/title_text_color"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/helveticaneue_light"
+            android:text="Your lease payment of AED 1500 is due on 15 Nov 2018.
+Please ensure sufficient funds are available in your bank account"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/title_text_color"/>
+    </LinearLayout>
+</LinearLayout>

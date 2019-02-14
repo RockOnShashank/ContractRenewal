@@ -1,0 +1,592 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <ScrollView
+        android:id="@+id/sv_parent"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_family"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f7f7f7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Family"
+                        android:textStyle="bold"
+                        android:textColor="#253746"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_family"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_icon" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Add your family members and their details" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_add_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f7f7f7"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Family"
+                    android:textColor="#253746"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="First Name*"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.()' "
+                    android:textColorHint="#253746"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.()' "
+                    android:hint="Last Name*"
+                    android:padding="10dp"
+                    android:textColorHint="#253746"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spin_relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#253746"
+                    android:textSize="13sp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:hint="@string/rel"
+                    />
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Relationship*"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:textColorHint="#253746"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Email ID"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:maxLength="35"
+                    android:textColorHint="#253746"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Mobile Number(05X XXXXXXX)"
+                    android:maxLines="1"
+                    android:maxLength="11"
+
+                    android:digits="0123456789 "
+                    android:padding="10dp"
+                    android:textColorHint="#253746"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/register_error_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_error_message_here_reg_sample"
+                    android:textColor="#da291c"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+                <EditText
+                    android:id="@+id/et_occupantId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:textColorHint="#253746"
+                    android:textSize="13sp" />
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bt_cancel"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/black_button_border"
+                        android:text="CANCEL"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/bt_save"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#253746"
+                        android:text="SAVE"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/ll_show_tv_full_namefamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f7f7f7"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d0d1d2"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+      <!--House Help-->
+            <LinearLayout
+                android:id="@+id/ll_house_help"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#f7f7f7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="House Help"
+                        android:textColor="#253746"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_house"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_icon" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Add details of your house help like cook, driver or gardener living with you." />
+
+           <!--ChildView HouseHelp-->
+                <LinearLayout
+                    android:id="@+id/ll_house_add_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#f7f7f7"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="House Help"
+                        android:textColor="#253746"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_house_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="First Name*"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.()' "
+
+                        android:maxLength="50"
+                        android:textColorHint="#253746"
+                        android:textSize="13sp" />
+                    <EditText
+                        android:id="@+id/et_house_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Last Name*"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.()' "
+
+                        android:padding="10dp"
+                        android:textColorHint="#253746"
+                        android:textSize="13sp" />
+                    <EditText
+                        android:id="@+id/et_house_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="1"
+                        android:maxLength="11"
+                        android:hint="Mobile Number(05X XXXXXXX)"
+                        android:digits="0123456789 "
+                        android:padding="10dp"
+                        android:textColorHint="#253746"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/register_error_message1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_error_message_here_reg_sample"
+                        android:textColor="#da291c"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+                    <EditText
+                        android:id="@+id/et_occupantId_House"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:textColorHint="#253746"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bt_house_cancel"
+                            android:layout_width="156dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_button_border"
+                            android:text="CANCEL"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/bt_house_save"
+                            android:layout_width="156dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="#253746"
+                            android:text="SAVE"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_house_show_tv_full_namefamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="#f7f7f7"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d0d1d2"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_house_family"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+<!--Pets-->
+
+            <LinearLayout
+                android:id="@+id/ll_pets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#f7f7f7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pets"
+                        android:textColor="#253746"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_pets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_icon" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Add details of your pets." />
+
+                <!--ChildView Pets-->
+
+                <LinearLayout
+                    android:id="@+id/ll_pets_add_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#f7f7f7"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Pets"
+                        android:textColor="#253746"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_pets_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Pet Name*"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890. "
+
+                        android:maxLength="40"
+                        android:textColorHint="#253746"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/et_pets_pet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="1"
+                        android:maxLength="18"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+
+                        android:hint="Pet Type*"
+                        android:padding="10dp"
+                        android:textColorHint="#253746"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/et_pets_breed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Breed"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:maxLength="18"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:textColorHint="#253746"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/et_petId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:textColorHint="#253746"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bt_pets_cancel"
+                            android:layout_width="156dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_button_border"
+                            android:text="CANCEL"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/bt_pets_save"
+                            android:layout_width="156dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="#253746"
+                            android:text="SAVE"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_pets_show_tv_full_namefamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#f7f7f7"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d0d1d2"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_pets_family"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
